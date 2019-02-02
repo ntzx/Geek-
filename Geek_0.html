@@ -13,114 +13,147 @@
     <script src="mdui-v0.4.2/js/mdui.js"></script>
     <!------------mdui-v0.4.2-js-&-css----------->
 </head>
-<body style="background-color:rgb(33, 149, 242)" id="mdui-theme-primary-deep-indigo  mdui-theme-accent-deep-purple" >
-      <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-toolbar-hide">
-        <div class="mdui-toolbar mdui-color-indigo ">
-            <a href="javascript:;" title="menu" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
-            <a href="javascript:;" class="mdui-typo-title ">极客社宣传网页</a>
-                <div class="mdui-toolbar-spacer"></div>
-            <a href="" title="refresh" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">cached</i></a>
-            <a href="javascript:;" title="more" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">more_vert</i></a>
+<body style="background-color:rgb(33, 149, 242) " 
+      id="mdui-theme-primary-deep-indigo  mdui-theme-accent-deep-purple">
+
+    <!--- -顶部工具栏- --->
+    <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-toolbar-hide">
+      <div class="mdui-toolbar mdui-color-indigo ">
+        <a href="javascript:;" title="menu" class="mdui-btn mdui-btn-icon " mdui-menu="{target: '#z'}">
+        <i class="mdui-icon material-icons">menu</i>
+        </a>
+        <ul style=" background-color:aliceblue" class="mdui-menu" id="z">
+          <li class="mdui-menu-item">
+            <a href="https://github.com/ntzx" target="_blank" class="mdui-ripple">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36" 
+                enable-background="new 0 0 36 36" xml:space="preserve" class="mdui-icon" style="width: 24px;height:24px;">
+                <path fill-rule="evenodd" clip-rule="evenodd" fill="#9999ff" d="M18,1.4C9,1.4,1.7,8.7,1.7,17.7c0,7.2,4.7,13.3,11.1,15.5
+                c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1
+                c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4
+                c-0.2-0.4-0.7-2.1,0.2-4.3c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7
+                c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5
+                c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C34.3,8.7,27,1.4,18,1.4z"></path>
+              </svg>  Our Github
+            </a>
+          </li>
+          <li class="mdui-menu-item">
+            <a href="https://github.com/EG01STAL" target="_blank" class="mdui-ripple">
+            <i class="mdui-menu-item-icon mdui-icon material-icons">developer_board</i>Developer
+            </a>
+          </li>
+          <li class="mdui-divider"></li>
+
+            <li class="mdui-menu-item">
+            <a href="about:blank" class="mdui-ripple">
+            <i class="mdui-menu-item-icon mdui-icon material-icons">album</i>Empty
+            </a>
+          </li>
+        </ul>
+        <a href="javascript:;" class="mdui-typo-title mdui-center">极客社宣传网页</a>
+        <a href="" title="refresh" class="mdui-btn mdui-btn-icon">
+        <i class="mdui-icon material-icons">cached</i>
+        </a>
         </div>
-        <div class="mdui-tab mdui-tab-full-width mdui-color-indigo " mdui-tab>
-              <a href="#tab1" class="mdui-tab-active mdui-ripple mdui-ripple-white mdui-center ">
-                <i class="mdui-icon material-icons ">library_books</i>
-              </a>
-              <a href="#tab2" class="mdui-ripple mdui-ripple-white mdui-center">
-                <i class="mdui-icon material-icons ">camera</i>
-              </a>
-              <a href="#tab3" class="mdui-ripple mdui-ripple-white mdui-center ">
-                <i class="mdui-icon material-icons ">apps</i>
-              </a>
-              <a href="#tab4" class="mdui-ripple mdui-ripple-white mdui-center">
-                <i class="mdui-icon material-icons ">perm_contact_calendar</i>
-              </a>
-        </div>
-      </div><!---->
-    
-      <div class="mdui-fab-wrapper" mdui-fab="options" id="examplefab">
-        <button id="close" class="mdui-fab mdui-ripple mdui-color-indigo">
-            <!-- 默认显示的图标 -->
-            <i class="mdui-icon material-icons ">add</i>
-            <!-- 在拨号菜单开始打开时，平滑切换到该图标，若不需要切换图标，则可以省略该元素 -->
-            <i class="mdui-icon mdui-fab-opened material-icons">details</i>
-        </button>
-        <div class="mdui-fab-dial">
+      </div>
+    <!--- -顶部工具栏- --->
+     
+    <!----右下悬浮按钮---->
+    <div class="mdui-fab-wrapper" mdui-fab="options" id="examplefab">
+      <button id="close" class="mdui-fab mdui-ripple mdui-color-indigo">
+          <!-- 默认显示的图标 -->
+          <i class="mdui-icon material-icons ">add</i>
+          <!-- 在拨号菜单开始打开时，平滑切换到该图标，若不需要切换图标，则可以省略该元素 -->
+          <i class="mdui-icon mdui-fab-opened material-icons">details</i>
+      </button>
+      <div class="mdui-fab-dial">
             <button title="bookmark" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-red" >
               <i class="mdui-icon material-icons">change_history</i></button>
             <button title="云平台网页" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-grey-600">
               <i class="mdui-icon material-icons">cloud_queue</i></button>
             <button title="望岳奖学金网页" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-cyan-900">
               <i class="mdui-icon material-icons">assistant</i></button>
-            <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-indigo-a700">
+            <button  class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-indigo-a700">
               <i class="mdui-icon material-icons">adjust</i></button>
-        </div>
       </div>
-      <div>
-      
-      </div>
-      <div class="mdui-container-fluid mdui-center">
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
-          <p>test</p>
+    </div>
+    <!----右下悬浮按钮---->
+
+    <!------网页主体------>
+    <div style="background-color: aliceblue ;" class="mdui-container mdui-shadow-15" >
+        
+        <p1>话说这个会多出来两行</p>
+        <p6>应该没人看得见(*^_^*)</p>
+        <div class="mdui-panel" mdui-panel>
+          <div class="mdui-panel-item mdui-panel-item-open">
+            <div class="mdui-panel-item-header "><p style="font-weight: 500;" class=" mdui-center mdui-typo-display-1">社团简介</p></div>
+            <div class="mdui-panel-item-body">
+                  <div class="mdui-card">
+                      <div class="mdui-card-media">
+                        <img src="material\\GEEK.png"/>
+                      </div>
+                      <div class="mdui-card-actions mdui-card-actions-stacked">
+                        <button class="mdui-btn mdui-ripple mdui-center">_______________________________</button>
+                        <button class="mdui-btn mdui-ripple mdui-center">____________________</button>
+                        <a href="http://www.geektyper.com/" target="_blank">
+                        <button class="mdui-btn mdui-ripple mdui-center"  >We are geeks.</button>
+                        </a>
+                        <button class="mdui-btn mdui-ripple mdui-center">____________________</button>
+                        <button class="mdui-btn mdui-ripple mdui-center">_______________________________</button>
+
+                      </div>
+                    </div>
+              <p>First content</p>
+              <p>First content</p>
+              <p>First content</p>
+              <p>First content</p>
+              <p>First content</p>
+              <p>First content</p>
+            </div>
+          </div>
+              
+          <div class="mdui-panel-item">
+            <div class="mdui-panel-item-header">Second</div>
+            <div class="mdui-panel-item-body">
+              <p>Second content</p>
+              <p>Second content</p>
+              <p>Second content</p>
+              <p>Second content</p>
+              <p>Second content</p>
+              <p>Second content</p>
+            </div>
+          </div>
+              
+          <div class="mdui-panel-item">
+            <div class="mdui-panel-item-header">Third</div>
+            <div class="mdui-panel-item-body">
+              <p>Third content</p>
+              <p>Third content</p>
+              <p>Third content</p>
+              <p>Third content</p>
+              <p>Third content</p>
+              <p>Third content</p>
+            </div>
+          </div>
+              
         </div>
+     <div>
+          <p3>test 3</p>
+          <p4>test 4</p>
+          <p5>test 5</p>
+          <p6>test 6</p>
+          <p>test 7</p>
+          <p>test 8</p>
+          <p>test 9</p>
+     </div>
+    </div>
+    <!------网页主体------>
+
+    <div   style=" background-color:dimgrey ;
+    width: 100%;
+    height: 100px;
+    bottom: 0%;">
+    
+    </div>
 
 </body>
 </html>
