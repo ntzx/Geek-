@@ -19,10 +19,11 @@
     <!--- -顶部工具栏- --->
     <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-toolbar-hide">
       <div class="mdui-toolbar mdui-color-indigo ">
-        <a href="javascript:;" title="menu" class="mdui-btn mdui-btn-icon " mdui-menu="{target: '#z'}">
+        <!--左上拓展-->
+        <a href="javascript:;" title="menu" class="mdui-btn mdui-btn-icon " mdui-menu="{target: '#ltm'}">
         <i class="mdui-icon material-icons">menu</i>
         </a>
-        <ul style=" background-color:aliceblue" class="mdui-menu" id="z">
+        <ul style=" background-color:aliceblue" class="mdui-menu" id="ltm">
           <li class="mdui-menu-item">
             <a href="https://github.com/ntzx" target="_blank" class="mdui-ripple">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36" 
@@ -42,13 +43,13 @@
             </a>
           </li>
           <li class="mdui-divider"></li>
-
             <li class="mdui-menu-item">
             <a href="about:blank" class="mdui-ripple">
             <i class="mdui-menu-item-icon mdui-icon material-icons">album</i>Empty
             </a>
           </li>
         </ul>
+        <!--左上拓展-->
         <a href="javascript:;" class="mdui-typo-title mdui-center">极客社宣传网页</a>
         <a href="" title="refresh" class="mdui-btn mdui-btn-icon">
         <i class="mdui-icon material-icons">cached</i>
@@ -62,7 +63,7 @@
       <button id="close" class="mdui-fab mdui-ripple mdui-color-indigo">
           <!-- 默认显示的图标 -->
           <i class="mdui-icon material-icons ">add</i>
-          <!-- 在拨号菜单开始打开时，平滑切换到该图标，若不需要切换图标，则可以省略该元素 -->
+          <!-- 在菜单开始打开时，平滑切换 -->
           <i class="mdui-icon mdui-fab-opened material-icons">details</i>
       </button>
       <div class="mdui-fab-dial">
@@ -79,27 +80,23 @@
     <!----右下悬浮按钮---->
 
     <!------网页主体------>
-    <div style="background-color: aliceblue ;" class="mdui-container mdui-shadow-15" >
+    <div style="background-color: aliceblue ;" class="mdui-container mdui-shadow-12" >
         
-        <p1>话说这个会多出来两行</p>
-        <p6>应该没人看得见(*^_^*)</p>
+        <p1 class=" mdui-center">话说这个会多出来两行</p>
+        <p6 class=" mdui-center">应该没人看得见(*^_^*)</p>
         <div class="mdui-panel" mdui-panel>
           <div class="mdui-panel-item mdui-panel-item-open">
             <div class="mdui-panel-item-header "><p style="font-weight: 500;" class=" mdui-center mdui-typo-display-1">社团简介</p></div>
             <div class="mdui-panel-item-body">
                   <div class="mdui-card">
                       <div class="mdui-card-media">
-                        <img src="material\\GEEK.png"/>
+                        <img src="material\\GEEK.jpg"/>
                       </div>
                       <div class="mdui-card-actions mdui-card-actions-stacked">
-                        <button class="mdui-btn mdui-ripple mdui-center">_______________________________</button>
-                        <button class="mdui-btn mdui-ripple mdui-center">____________________</button>
-                        <a href="http://www.geektyper.com/" target="_blank">
-                        <button class="mdui-btn mdui-ripple mdui-center"  >We are geeks.</button>
+                        <a class="mdui-btn mdui-ripple mdui-center">_______________________________</a>
+                        <a href="http://www.geektyper.com/" target="_blank" class=" mdui-center mdui-btn">We are geeks.
                         </a>
-                        <button class="mdui-btn mdui-ripple mdui-center">____________________</button>
-                        <button class="mdui-btn mdui-ripple mdui-center">_______________________________</button>
-
+                        <a class="mdui-btn mdui-ripple mdui-center">_______________________________</a>
                       </div>
                     </div>
               <p>First content</p>
@@ -112,19 +109,30 @@
           </div>
               
           <div class="mdui-panel-item">
-            <div class="mdui-panel-item-header">Second</div>
+            <div class="mdui-panel-item-header">社团项目</div>
             <div class="mdui-panel-item-body">
-              <p>Second content</p>
-              <p>Second content</p>
-              <p>Second content</p>
-              <p>Second content</p>
-              <p>Second content</p>
-              <p>Second content</p>
+              <div class="mdui-panel" mdui-panel>
+                <div class="mdui-panel-item">
+                  <div class="mdui-panel-item-header">First</div>
+                  <div class="mdui-panel-item-body">
+                    <p>First content</p>
+                    <p>First content</p>
+                    <p>First content</p>
+                  </div>
+                </div>
+              <div class="mdui-panel-item">
+                <div class="mdui-panel-item-header">Second</div>
+                <div class="mdui-panel-item-body">
+                  <p>First content</p>
+                  <p>First content</p>
+                  <p>First content</p>
+                </div>
+              </div>
+              </div>
             </div>
           </div>
-              
           <div class="mdui-panel-item">
-            <div class="mdui-panel-item-header">Third</div>
+            <div class="mdui-panel-item-header">社团成员</div>
             <div class="mdui-panel-item-body">
               <p>Third content</p>
               <p>Third content</p>
@@ -135,8 +143,8 @@
             </div>
           </div>
               
-        </div>
-     <div>
+          </div>
+        <div>
           <p3>test 3</p>
           <p4>test 4</p>
           <p5>test 5</p>
@@ -144,16 +152,17 @@
           <p>test 7</p>
           <p>test 8</p>
           <p>test 9</p>
-     </div>
+        </div>
+        </div>
     </div>
     <!------网页主体------>
 
+    <!--底部-->
     <div   style=" background-color:dimgrey ;
+	  height: 100px;
     width: 100%;
-    height: 100px;
-    bottom: 0%;">
-    
+    bottom: 0;">
     </div>
-
+    <!--底部-->
 </body>
 </html>
