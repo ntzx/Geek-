@@ -8,9 +8,8 @@
     <link rel="icon" href="material\\geek.ico">
     <title>Geek_NTZX</title>
     <!--————————————↑——标签——↑————————————-->
-    <link href="mdui-v0.4.2/css/mdui.css" rel="stylesheet">
-    <link href="mdui-v0.4.2/js/mdui.js" rel="stylesheet">
-    <script src="mdui-v0.4.2/js/mdui.js"></script>
+    <link href="mdui-v0.4.2/css/mdui.min.css" rel="stylesheet">
+    <script src="mdui-v0.4.2/js/mdui.min.js"></script>
     <!------------mdui-v0.4.2-js-&-css----------->
 </head>
 <body style="background-color:rgb(33, 149, 242) " 
@@ -67,10 +66,14 @@
           <i class="mdui-icon mdui-fab-opened material-icons">details</i>
       </button>
       <div class="mdui-fab-dial">
-            <button title="bookmark" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-red" >
+            <a href="#top">
+            <button title="back to top " class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-red">
               <i class="mdui-icon material-icons">change_history</i></button>
-            <button title="云平台网页" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-grey-600">
+            </a>
+            <a href="https://ntzx.github.io/cloud/Cloud_1.html" target="_blank">
+            <button title="云平台网页" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-grey-600" onclick="ntzx.github.io/cloud/Cloud_1.html">
               <i class="mdui-icon material-icons">cloud_queue</i></button>
+            </a>
             <button title="望岳奖学金网页" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-cyan-900">
               <i class="mdui-icon material-icons">assistant</i></button>
             <button  class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-indigo-a700">
@@ -82,7 +85,7 @@
     <!------网页主体------>
     <div style="background-color: aliceblue ;" class="mdui-container mdui-shadow-12" >
         
-        <p1 class=" mdui-center">话说这个会多出来两行</p>
+        <p1 class=" mdui-center" id="top">话说这个会多出来两行</p>
         <p6 class=" mdui-center">应该没人看得见(*^_^*)</p>
         <div class="mdui-panel" mdui-panel>
           <div class="mdui-panel-item mdui-panel-item-open">
@@ -98,7 +101,8 @@
                         </a>
                         <a class="mdui-btn mdui-ripple mdui-center">_______________________________</a>
                       </div>
-                    </div>
+                  </div>
+              <div style=" width:100%;height:10px;" class=" mdui-center"> </div>
               <p>First content</p>
               <p>First content</p>
               <p>First content</p>
@@ -113,46 +117,131 @@
             <div class="mdui-panel-item-body">
               <div class="mdui-panel" mdui-panel>
                 <div class="mdui-panel-item">
-                  <div class="mdui-panel-item-header">First</div>
+                  <div class="mdui-panel-item-header">楸阳网上书库（微信小程序）</div>
                   <div class="mdui-panel-item-body">
-                    <p>First content</p>
-                    <p>First content</p>
-                    <p>First content</p>
+                    <p>该项目由学生会委托</p>
+                    <p>但是由于种种原因 该项目暂时搁置</p>
+                    <p><del>我才不会告诉你们是学生会没钱买书的版权</del>(～￣▽￣)～</p>
+                    <a href="https://github.com/ntzx/QiuyangLibrary" class=" mdui-btn" target="_blank">To Github for more</a>
                   </div>
                 </div>
-              <div class="mdui-panel-item">
-                <div class="mdui-panel-item-header">Second</div>
-                <div class="mdui-panel-item-body">
-                  <p>First content</p>
-                  <p>First content</p>
-                  <p>First content</p>
+
+                <div class="mdui-panel-item">
+                    <div class="mdui-panel-item-header">云平台宣传网页</div>
+                    <div class="mdui-panel-item-body">
+                      <p>为云平台社团宣传</p>
+                      <p>质量极高 组内人数最多</p>
+                      <p><del>为什么他们有看板娘！</del>w(ﾟДﾟ)w</p>
+                      <a href="https://github.com/ntzx/cloud" class=" mdui-btn" target="_blank">To Github for more</a>
+                    </div>
+                  </div>
+                
+                <div class="mdui-panel-item">
+                    <div class="mdui-panel-item-header">望岳奖学金网页</div>
+                    <div class="mdui-panel-item-body">
+                      <p>本来就是为望岳奖学金宣传的 </p>
+                      <p>戳右下角去看吧</p>
+                      <p>ψ(｀∇´)ψ</p>
+                     <a href="https://github.com/ntzx/wangyue" class=" mdui-btn" target="_blank">To Github for more</a>
+                    </div>
+                 </div>
+                
+                <div class="mdui-panel-item">
+                  <div class="mdui-panel-item-header">极客社宣传网页</div>
+                  <div class="mdui-panel-item-body">
+                    <p>就是这个啦！ヾ(o´∀｀o)ﾉ</p>
+                    <p>极客社制作组在三个制作组中人数最少</p>
+                    <p>但还是坚强的完成了任务</p>
+                    <p><del>鬼知道就我一个人怎么做完的</del>(；´д｀)ゞ</p>
+                    <a href="https://github.com/ntzx/Geek-" class=" mdui-btn" target="_blank">To Github for more</a>
+                  </div>
                 </div>
-              </div>
+
               </div>
             </div>
           </div>
           <div class="mdui-panel-item">
             <div class="mdui-panel-item-header">社团成员</div>
             <div class="mdui-panel-item-body">
-              <p>Third content</p>
-              <p>Third content</p>
-              <p>Third content</p>
-              <p>Third content</p>
-              <p>Third content</p>
-              <p>Third content</p>
+                <ul class="mdui-list">
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-avatar"><img src="https://avatars2.githubusercontent.com/u/6104981?s=96&v=4"/></div>
+                        <div class="mdui-list-item-content">Heyang Zhou </div>
+                      </li>
+                    <li class="mdui-list-item mdui-ripple">
+                      <div class="mdui-list-item-avatar"><img src="https://avatars2.githubusercontent.com/u/34186679?s=96&v=4"/></div>
+                      <div class="mdui-list-item-content">陆正扬 </div>
+                      </li>
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-avatar"><img src="https://avatars1.githubusercontent.com/u/33384538?s=96&v=4"/></div>
+                        <div class="mdui-list-item-content">ZhouZiHao-Moon </div>
+                      </li>
+                    <li class="mdui-list-item mdui-ripple">
+                      <div class="mdui-list-item-avatar"><img src="https://avatars1.githubusercontent.com/u/43541396?s=96&v=4"/></div>
+                      <div class="mdui-list-item-content">EG01STAL </div>
+                      </li>
+                    <li class="mdui-list-item mdui-ripple">
+                      <div class="mdui-list-item-avatar"><img src="https://avatars0.githubusercontent.com/u/33384768?s=96&v=4"/></div>
+                      <div class="mdui-list-item-content">gwtt </div>
+                      </li>
+                    <li class="mdui-list-item mdui-ripple">
+                      <div class="mdui-list-item-avatar"><img src="https://avatars2.githubusercontent.com/u/43716101?s=96&v=4"/></div>
+                      <div class="mdui-list-item-content">Doctor Strange </div>
+                      </li>
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-avatar"><img src="https://avatars2.githubusercontent.com/u/43742112?s=96&v=4"/></div>
+                        <div class="mdui-list-item-content">jiangli1809877784 </div>
+                      </li>
+                   <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-avatar"><img src="https://avatars1.githubusercontent.com/u/43716188?s=96&v=4"/></div>
+                        <div class="mdui-list-item-content">longsausage </div>
+                      </li>
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-avatar"><img src="https://avatars2.githubusercontent.com/u/33352608?s=96&v=4"/></div>
+                        <div class="mdui-list-item-content">Guchen1 </div>
+                      </li>
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-avatar"><img src="https://avatars2.githubusercontent.com/u/43716186?s=96&v=4"/></div>
+                        <div class="mdui-list-item-content">nijunfeng234154 </div>
+                      </li>
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-avatar"><img src="https://avatars3.githubusercontent.com/u/15956055?s=96&v=4"/></div>
+                        <div class="mdui-list-item-content">ntdgy </div>
+                      </li>
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-avatar"><img src="https://avatars1.githubusercontent.com/u/30099658?s=96&v=4"/></div>
+                        <div class="mdui-list-item-content">Nugine </div>
+                      </li>
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-avatar"><img src="https://avatars0.githubusercontent.com/u/43518854?s=96&v=4"/></div>
+                        <div class="mdui-list-item-content">qydeveloper </div>
+                      </li>
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-avatar"><img src="https://avatars0.githubusercontent.com/u/43716218?s=96&v=4"/></div>
+                        <div class="mdui-list-item-content">sunlightslh </div>
+                      </li>
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-avatar"><img src="https://avatars2.githubusercontent.com/u/43782766?s=96&v=4"/></div>
+                        <div class="mdui-list-item-content">thinklive1 </div>
+                      </li>
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-avatar"><img src="https://avatars1.githubusercontent.com/u/43716207?s=96&v=4"/></div>
+                        <div class="mdui-list-item-content">LHH_Beyond </div>
+                      </li>
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-avatar"><img src="https://avatars1.githubusercontent.com/u/43716135?s=96&v=4"/></div>
+                      <div class="mdui-list-item-content">wmm </div>
+                      </li>
+                    <li class="mdui-list-item mdui-ripple">
+                        <div class="mdui-list-item-avatar"><img src="https://avatars1.githubusercontent.com/u/43716428?s=96&v=4"/></div>
+                        <div class="mdui-list-item-content">zzy2224 </div>
+                      </li>
+                  </ul>
+                  <a href="https://github.com/orgs/ntzx/people" class=" mdui-btn mdui-center" target="_blank">剩下的没有完成注册......o(*￣▽￣*)o </a>
             </div>
           </div>
-              
+          <div style=" width:100%;height:15px;" class=" mdui-center"> </div>
           </div>
-        <div>
-          <p3>test 3</p>
-          <p4>test 4</p>
-          <p5>test 5</p>
-          <p6>test 6</p>
-          <p>test 7</p>
-          <p>test 8</p>
-          <p>test 9</p>
-        </div>
         </div>
     </div>
     <!------网页主体------>
@@ -162,6 +251,7 @@
 	  height: 100px;
     width: 100%;
     bottom: 0;">
+    
     </div>
     <!--底部-->
 </body>
