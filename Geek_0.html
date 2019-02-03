@@ -10,7 +10,6 @@
     <!--————————————↑——标签——↑————————————-->
     <link href="mdui-v0.4.2/css/mdui.min.css" rel="stylesheet">
     <script src="mdui-v0.4.2/js/mdui.min.js"></script>
-    <!------------mdui-v0.4.2-js-&-css----------->
 </head>
 <body style="background-color:rgb(33, 149, 242) " 
       id="mdui-theme-primary-deep-indigo  mdui-theme-accent-deep-purple">
@@ -66,17 +65,19 @@
           <i class="mdui-icon mdui-fab-opened material-icons">details</i>
       </button>
       <div class="mdui-fab-dial">
-            <a href="#top">
+            <a href="#btt">
             <button title="back to top " class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-red">
               <i class="mdui-icon material-icons">change_history</i></button>
             </a>
             <a href="https://ntzx.github.io/cloud/Cloud_1.html" target="_blank">
-            <button title="云平台网页" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-grey-600" onclick="ntzx.github.io/cloud/Cloud_1.html">
+            <button title="云平台网页" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-grey-600" >
               <i class="mdui-icon material-icons">cloud_queue</i></button>
             </a>
-            <button title="望岳奖学金网页" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-cyan-900">
+            <a href="https://www.wangyue123.xyz" target="_blank">
+            <button title="望岳奖学金网页" class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-cyan-900" >
               <i class="mdui-icon material-icons">assistant</i></button>
-            <button  class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-indigo-a700">
+            </a>
+            <button  class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-indigo-a700" onclick="">
               <i class="mdui-icon material-icons">adjust</i></button>
       </div>
     </div>
@@ -84,13 +85,11 @@
 
     <!------网页主体------>
     <div style="background-color: aliceblue ;" class="mdui-container mdui-shadow-12" >
-        
-        <p1 class=" mdui-center" id="top">话说这个会多出来两行</p>
-        <p6 class=" mdui-center">应该没人看得见(*^_^*)</p>
+        <div id="btt" style="height:45px;width: auto" ></div>
         <div class="mdui-panel" mdui-panel>
-          <div class="mdui-panel-item mdui-panel-item-open">
-            <div class="mdui-panel-item-header "><p style="font-weight: 500;" class=" mdui-center mdui-typo-display-1">社团简介</p></div>
+          <div class="mdui-panel-item mdui-panel-item-open" >
             <div class="mdui-panel-item-body">
+                <div class="mdui-panel-item-header " aria-disabled="true"><p style="font-weight: 500;" class=" mdui-center mdui-typo-display-1">社团简介</p></div>
                   <div class="mdui-card">
                       <div class="mdui-card-media">
                         <img src="material\\GEEK.jpg"/>
@@ -103,22 +102,32 @@
                       </div>
                   </div>
               <div style=" width:100%;height:10px;" class=" mdui-center"> </div>
-              <p>First content</p>
-              <p>First content</p>
-              <p>First content</p>
-              <p>First content</p>
-              <p>First content</p>
-              <p>First content</p>
+              <ul>
+                <li style="font-weight: 600;">极客是美国俚语“geek”的音译。随着互联网文化的兴起，这个词含有智力超群和努力的语意，
+                    又被用于形容对计算机和网络技术有狂热兴趣并投入大量时间钻研的人。
+                    现代的Geek含义虽然与过去有所不同，但大多还是相似的，现在Geek更多有一种在互联网时代创造全新的商业模式、尖端技术与时尚潮流。
+                    总之，是一群以创新、技术和时尚为生命意义的人，这群人不分性别，不分年龄，
+                    共同的战斗在新经济、尖端技术和世界时尚风潮的前线，共同为现代的电子化社会文化做出自己的贡献。</li>
+                <div style="height:15px;width: auto" ></div>
+                <li>该届极客社建立于2018-7-10，招收对信息技术有浓厚兴趣，有一定信息技术方面特长的学生。
+                    随着社团的发展，我校两大计算机社团“极客社”“云平台”走向联合，共同致力于网页开发。
+                    社员利用社团活动及课余时间，学习研究网页开发相关知识，承担起学校活动及其它社团所委托的网页。</li>
+                <ul><li><p>如社长周子皓为高一研学报名制作网页，并投入使用。</p><del style="font-weight: 600;font-style: italic;">获得全校师生一致好评。</del></li></ul>
+                <div style="height:15px;width: auto" ></div>
+                <li>2018至2019年第一学期开学初，经过社团招新和入社考核，极客社&云平台共招收新社员30人。
+                  社团成员积极参与社团活动，在学习完HTML'CSS'Javascript等的基础知识后，
+                  分为三组分别负责开发极客社、云平台、望岳奖学金的网站。</li>
+              </ul>
             </div>
           </div>
               
           <div class="mdui-panel-item">
-            <div class="mdui-panel-item-header">社团项目</div>
+            <div class="mdui-panel-item-header"><i class="mdui-icon material-icons">apps</i><div style="height:auto;width:25px;"></div>社团项目</div>
             <div class="mdui-panel-item-body">
-              <div class="mdui-panel" mdui-panel>
-                <div class="mdui-panel-item">
-                  <div class="mdui-panel-item-header">楸阳网上书库（微信小程序）</div>
-                  <div class="mdui-panel-item-body">
+              <div class="mdui-panel mdui-panel-popout" mdui-panel>
+                <div class="mdui-panel-item ">
+                  <div class="mdui-panel-item-header ">楸阳网上书库（微信小程序）</div>
+                  <div class="mdui-panel-item-body" >
                     <p>该项目由学生会委托</p>
                     <p>但是由于种种原因 该项目暂时搁置</p>
                     <p><del>我才不会告诉你们是学生会没钱买书的版权</del>(～￣▽￣)～</p>
@@ -126,8 +135,8 @@
                   </div>
                 </div>
 
-                <div class="mdui-panel-item">
-                    <div class="mdui-panel-item-header">云平台宣传网页</div>
+                <div class="mdui-panel-item ">
+                    <div class="mdui-panel-item-header ">云平台宣传网页</div>
                     <div class="mdui-panel-item-body">
                       <p>为云平台社团宣传</p>
                       <p>质量极高 组内人数最多</p>
@@ -136,8 +145,8 @@
                     </div>
                   </div>
                 
-                <div class="mdui-panel-item">
-                    <div class="mdui-panel-item-header">望岳奖学金网页</div>
+                <div class="mdui-panel-item ">
+                    <div class="mdui-panel-item-header ">望岳奖学金网页</div>
                     <div class="mdui-panel-item-body">
                       <p>本来就是为望岳奖学金宣传的 </p>
                       <p>戳右下角去看吧</p>
@@ -146,8 +155,8 @@
                     </div>
                  </div>
                 
-                <div class="mdui-panel-item">
-                  <div class="mdui-panel-item-header">极客社宣传网页</div>
+                <div class="mdui-panel-item ">
+                  <div class="mdui-panel-item-header ">极客社宣传网页</div>
                   <div class="mdui-panel-item-body">
                     <p>就是这个啦！ヾ(o´∀｀o)ﾉ</p>
                     <p>极客社制作组在三个制作组中人数最少</p>
@@ -161,98 +170,143 @@
             </div>
           </div>
           <div class="mdui-panel-item">
-            <div class="mdui-panel-item-header">社团成员</div>
+            <div class="mdui-panel-item-header"><i class="mdui-icon material-icons">people</i><div style="height:auto;width:25px;"></div>社团成员</div>
             <div class="mdui-panel-item-body">
                 <ul class="mdui-list">
+                  <a href="https://github.com/losfair" target="_blank">
                     <li class="mdui-list-item mdui-ripple">
                         <div class="mdui-list-item-avatar"><img src="https://avatars2.githubusercontent.com/u/6104981?s=96&v=4"/></div>
                         <div class="mdui-list-item-content">Heyang Zhou </div>
                       </li>
+                    </a>
+                  <a href="https://github.com/LuZhengyang2017" target="_blank">
                     <li class="mdui-list-item mdui-ripple">
                       <div class="mdui-list-item-avatar"><img src="https://avatars2.githubusercontent.com/u/34186679?s=96&v=4"/></div>
                       <div class="mdui-list-item-content">陆正扬 </div>
                       </li>
+                    </a>
+                  <a href="https://github.com/ZhouZiHao-Moon" target="_blank">
                     <li class="mdui-list-item mdui-ripple">
                         <div class="mdui-list-item-avatar"><img src="https://avatars1.githubusercontent.com/u/33384538?s=96&v=4"/></div>
                         <div class="mdui-list-item-content">ZhouZiHao-Moon </div>
                       </li>
+                    </a>
+                  <a href="https://github.com/EG01STAL" target="_blank">
                     <li class="mdui-list-item mdui-ripple">
                       <div class="mdui-list-item-avatar"><img src="https://avatars1.githubusercontent.com/u/43541396?s=96&v=4"/></div>
                       <div class="mdui-list-item-content">EG01STAL </div>
                       </li>
+                    </a>
+                  <a href="https://github.com/gwtt" target="_blank">
                     <li class="mdui-list-item mdui-ripple">
                       <div class="mdui-list-item-avatar"><img src="https://avatars0.githubusercontent.com/u/33384768?s=96&v=4"/></div>
                       <div class="mdui-list-item-content">gwtt </div>
                       </li>
+                    </a>
+                  <a href="https://github.com/huangfangzheng" target="_blank">
                     <li class="mdui-list-item mdui-ripple">
                       <div class="mdui-list-item-avatar"><img src="https://avatars2.githubusercontent.com/u/43716101?s=96&v=4"/></div>
                       <div class="mdui-list-item-content">Doctor Strange </div>
                       </li>
+                    </a>
+                  <a href="https://github.com/jiangli1809877784" target="_blank">
                     <li class="mdui-list-item mdui-ripple">
                         <div class="mdui-list-item-avatar"><img src="https://avatars2.githubusercontent.com/u/43742112?s=96&v=4"/></div>
                         <div class="mdui-list-item-content">jiangli1809877784 </div>
                       </li>
+                    </a>
+                  <a href="https://github.com/longsausage" target="_blank"> 
                    <li class="mdui-list-item mdui-ripple">
                         <div class="mdui-list-item-avatar"><img src="https://avatars1.githubusercontent.com/u/43716188?s=96&v=4"/></div>
                         <div class="mdui-list-item-content">longsausage </div>
                       </li>
+                    </a>
+                  <a href="https://github.com/Guchen1" target="_blank">
                     <li class="mdui-list-item mdui-ripple">
                         <div class="mdui-list-item-avatar"><img src="https://avatars2.githubusercontent.com/u/33352608?s=96&v=4"/></div>
                         <div class="mdui-list-item-content">Guchen1 </div>
                       </li>
+                    </a>
+                  <a href="https://github.com/nijunfeng234154" target="_blank">
                     <li class="mdui-list-item mdui-ripple">
                         <div class="mdui-list-item-avatar"><img src="https://avatars2.githubusercontent.com/u/43716186?s=96&v=4"/></div>
                         <div class="mdui-list-item-content">nijunfeng234154 </div>
                       </li>
+                    </a>
+                  <a href="https://github.com/ntdgy" target="_blank">
                     <li class="mdui-list-item mdui-ripple">
                         <div class="mdui-list-item-avatar"><img src="https://avatars3.githubusercontent.com/u/15956055?s=96&v=4"/></div>
                         <div class="mdui-list-item-content">ntdgy </div>
                       </li>
+                    </a>
+                  <a href="https://github.com/Nugine" target="_blank">
                     <li class="mdui-list-item mdui-ripple">
                         <div class="mdui-list-item-avatar"><img src="https://avatars1.githubusercontent.com/u/30099658?s=96&v=4"/></div>
                         <div class="mdui-list-item-content">Nugine </div>
                       </li>
+                    </a>
+                  <a href="https://github.com/qydeveloper" target="_blank"> 
                     <li class="mdui-list-item mdui-ripple">
                         <div class="mdui-list-item-avatar"><img src="https://avatars0.githubusercontent.com/u/43518854?s=96&v=4"/></div>
                         <div class="mdui-list-item-content">qydeveloper </div>
                       </li>
-                    <li class="mdui-list-item mdui-ripple">
+                    </a>
+                  <a href="https://github.com/sunlightslh" target="_blank">
+                      <li class="mdui-list-item mdui-ripple">
                         <div class="mdui-list-item-avatar"><img src="https://avatars0.githubusercontent.com/u/43716218?s=96&v=4"/></div>
                         <div class="mdui-list-item-content">sunlightslh </div>
                       </li>
-                    <li class="mdui-list-item mdui-ripple">
+                    </a>
+                  <a href="https://github.com/thinklive1" target="_blank">
+                      <li class="mdui-list-item mdui-ripple">
                         <div class="mdui-list-item-avatar"><img src="https://avatars2.githubusercontent.com/u/43782766?s=96&v=4"/></div>
                         <div class="mdui-list-item-content">thinklive1 </div>
                       </li>
-                    <li class="mdui-list-item mdui-ripple">
+                    </a>
+                  <a href="https://github.com/VincentLHH" target="_blank">
+                      <li class="mdui-list-item mdui-ripple">
                         <div class="mdui-list-item-avatar"><img src="https://avatars1.githubusercontent.com/u/43716207?s=96&v=4"/></div>
                         <div class="mdui-list-item-content">LHH_Beyond </div>
                       </li>
-                    <li class="mdui-list-item mdui-ripple">
+                    </a>
+                  <a href="https://github.com/wmmdmm" target="_blank">
+                      <li class="mdui-list-item mdui-ripple">
                         <div class="mdui-list-item-avatar"><img src="https://avatars1.githubusercontent.com/u/43716135?s=96&v=4"/></div>
                       <div class="mdui-list-item-content">wmm </div>
                       </li>
-                    <li class="mdui-list-item mdui-ripple">
+                    </a>
+                  <a href="https://github.com/zzy2224" target="_blank">
+                      <li class="mdui-list-item mdui-ripple">
                         <div class="mdui-list-item-avatar"><img src="https://avatars1.githubusercontent.com/u/43716428?s=96&v=4"/></div>
                         <div class="mdui-list-item-content">zzy2224 </div>
                       </li>
+                    </a>
                   </ul>
                   <a href="https://github.com/orgs/ntzx/people" class=" mdui-btn mdui-center" target="_blank">剩下的没有完成注册......o(*￣▽￣*)o </a>
             </div>
           </div>
-          <div style=" width:100%;height:15px;" class=" mdui-center"> </div>
+          <div style=" width:100%;height:30px;" class=" mdui-center"> </div>
           </div>
-        </div>
     </div>
     <!------网页主体------>
-
-    <!--底部-->
-    <div   style=" background-color:dimgrey ;
-	  height: 100px;
-    width: 100%;
-    bottom: 0;">
-    
-    </div>
-    <!--底部-->
+      <!--底部-->
+      <div style="background-color:dimgrey" class="mdui-bottom-nav mdui-valign">
+            <button class="mdui-btn mdui-ripple mdui-btn-icon mdui-center" mdui-dialog="{target: '#exampleDialog'}">
+            <i class="mdui-icon material-icons">info</i>
+            </button>
+          <div class="mdui-dialog" id="exampleDialog">
+            <div class="mdui-dialog-title">Copyright (c) 2019 南通中学极客社</div>
+            <div class="mdui-dialog-content">制作人员：
+              <a href=""><del>@熬夜爆肝的EG01STAL</del></a>
+            </div>
+            <div class="mdui-dialog-actions">
+              <button onclick="window.open('https://jq.qq.com/?_wv=1027&k=59W4F06')"
+              class="mdui-btn mdui-ripple mdui-text-capitalize" mdui-dialog-close>join us?</button>
+              <button onclick="window.open('https://www.ntzx.cn/')"
+              class="mdui-btn mdui-ripple" mdui-dialog-close>南通中学</button>
+            </div>
+          </div>
+      </div>
+      <!--底部-->
 </body>
 </html>
