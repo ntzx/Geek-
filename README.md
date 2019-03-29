@@ -21,4 +21,6 @@ MIT LICENSE
     - lmj
 - 网页布局及代码
     - lmj
-- Oh！My！God！
+- 更改计划 3-29
+    - 指导？——王喆 陆正扬
+    - 制作——lmj
