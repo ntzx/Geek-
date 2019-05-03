@@ -11,7 +11,7 @@
      <!--————————————↑——标签——↑————————————-->
      <link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/mdui/0.4.2/css/mdui.min.css">
      <script src="https://cdnjs.loli.net/ajax/libs/mdui/0.4.2/js/mdui.min.js"></script>
-     <link href="material/mdui.css" rel="stylesheet">
+     <link href="material/mdui.min.css" rel="stylesheet">
      <script src="material/mdui.min.js"></script>
 </head>
 
@@ -398,7 +398,7 @@
             <img  src="material\4.JPG"/>
           </div>
 
-          <div class="mdui-card-content">云平台社长仇怡的近照</div>
+          <div class="mdui-card-content">云平台社长仇怡</div>
         </div>
       </div>
 
@@ -493,8 +493,8 @@
 
 
 <!-------- 底部导航栏 （只在小屏幕上显示）---------->
-<div class=" mdui-bottom-nav  mdui-bottom-nav-text-auto mdui-hidden-sm-up mdui-color-indigo mdui-bottom-nav-scroll-hide " mdui-tab>
-    <a href="#project" class="mdui-ripple mdui-ripple-white" >
+<div class=" mdui-bottom-nav  mdui-bottom-nav-text-auto mdui-hidden-sm-up mdui-color-indigo  " mdui-tab>
+      <a href="#project"  class="mdui-ripple mdui-ripple-white" >
         <i class="mdui-icon material-icons">apps</i>
         <label>活动成就</label>
       </a>
@@ -502,11 +502,11 @@
         <i class="mdui-icon material-icons">home</i>
         <label>主页</label>
       </a>
-      <a href="#member" class="mdui-ripple mdui-ripple-white">
+      <a href="#member"  class="mdui-ripple mdui-ripple-white">
         <i class="mdui-icon material-icons">people</i>
         <label>社团成员</label>
       </a>
-      <a href="#photo" class="mdui-ripple mdui-ripple-white">
+      <a href="#photo"  class="mdui-ripple mdui-ripple-white">
         <i class="mdui-icon material-icons">camera</i>
         <label>活动照片</label>
       </a>
@@ -515,86 +515,15 @@
 
 
 
-<!------------ 抽屉蓝 ------------>
-<div class="mdui-drawer mdui-drawer-full-height mdui-color-white mdui-drawer-close mdui-drawer-right" id="main-drawer">        
-    <ul style=" background-color:white" class="mdui-list" >
-  
-      <a mdui-drawer="{target:'#main-drawer',overlay:true,swipe:false}">
-        <li class="mdui-list-item mdui-ripple">
-        <div class="mdui-list-item-content"></div>
-        <i class="mdui-list-item-icon mdui-icon material-icons">arrow_forward</i>
-      </li>
-      </a>
-  
-      <li class="mdui-divider"></li>
-  
-        <li class="mdui-menu-item">
-          <a href="https://github.com/ntzx" target="_blank" class="mdui-ripple">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" 
-              enable-background="new 0 0 40 40" xml:space="preserve" class="mdui-icon" style="width: 24px;height:24px;">
-              <path fill-rule="evenodd" clip-rule="evenodd" fill="#9999ff" d="M18,1.4C9,1.4,1.7,8.7,1.7,17.7c0,7.2,4.7,13.3,11.1,15.5
-              c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1
-              c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4
-              c-0.2-0.4-0.7-2.1,0.2-4.3c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7
-              c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5
-              c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C34.3,8.7,27,1.4,18,1.4z"></path>
-            </svg>Our Github
-          </a>
-        </li>
-  
-        <li class="mdui-divider"></li>
-  
-        <li class="mdui-menu-item">
-          <a href="https://ntzx.github.io/cloud/index.html" target="_blank">
-            <i class="mdui-menu-item-icon mdui-icon material-icons">cloud_queue</i>云平台宣传网页
-          </a>
-        </li>
-  
-        <li class="mdui-menu-item">
-          <a href="https://github.com/ntzx/Geek-/blob/master/index.html" >
-            <i class="mdui-menu-item-icon mdui-icon material-icons">code</i>查看源码
-          </a>
-        </li>
-  
-        <li class="mdui-menu-item">
-            <a mdui-dialog="{target: '#later'}" >
-              <i class="mdui-menu-item-icon mdui-icon material-icons">public</i>博客
-            </a>
-        </li>
-  
-        <li class="mdui-divider"></li>
-  
-        <li class="mdui-menu-item">
-          <a mdui-dialog="{target: '#about'}"  class="mdui-ripple">
-            <i class="mdui-menu-item-icon mdui-icon material-icons">info</i>关于
-          </a>
-        </li>
-  
-        <li class="mdui-menu-item">
-          <a mdui-dialog="{target: '#contact'}" class="mdui-ripple">
-            <i class="mdui-menu-item-icon mdui-icon material-icons">phone</i>联系我们
-          </a>
-        </li>
-        <li class="mdui-menu-item">
-          <a href="https://www.ntzx.cn" class="mdui-ripple" target="_blank">
-            <i class="mdui-menu-item-icon mdui-icon material-icons">account_balance</i>南通中学
-          </a>
-        </li>
-    </ul>
-  </div>
-<!------------ 抽屉蓝 ------------>
-
-
-
 <!------------ 页底 ------------>
-<div style="height:30px;width:auto;"></div>
-<div class="mdui-typo">
-<div class=" mdui-container-fluid " style="background-color: rgb(57,166,255); border-top : 0px solid #e2e2e2;padding: 10px 0 20px 0;text-align: center;margin: 0 auto;height:auto;">
-
-  <a href="https://github.com/ntzx" target="_blank" class="mdui-ripple" class="mdui-btn">
+<div class=" mdui-container mdui-shadow-12  " style="background-color: rgb(201, 201, 201); text-align: center;
+                                                     margin: 0 auto;height:auto; padding: 20px 20% ;
+                                                     bottom: 0px;">
+<ul class=" mdui-list ">
+  <a href="https://github.com/ntzx" target="_blank" >
     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" 
       enable-background="new 0 0 40 40" xml:space="preserve" class="mdui-icon" style="width: 24px;height:24px;">
-      <path fill-rule="evenodd" clip-rule="evenodd" fill="#9999ff" d="M18,1.4C9,1.4,1.7,8.7,1.7,17.7c0,7.2,4.7,13.3,11.1,15.5
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#9999FF" d="M18,1.4C9,1.4,1.7,8.7,1.7,17.7c0,7.2,4.7,13.3,11.1,15.5
       c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1
       c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4
       c-0.2-0.4-0.7-2.1,0.2-4.3c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7
@@ -602,35 +531,47 @@
       c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C34.3,8.7,27,1.4,18,1.4z"></path>
     </svg>Our Github
   </a>
+</ul>
 
-  <a href="https://ntzx.github.io/cloud/index.html" target="_blank" class="mdui-btn">
+<ul class=" mdui-list">
+  <a href="https://ntzx.github.io/cloud/index.html" target="_blank" >
     <i class="mdui-menu-item-icon mdui-icon material-icons">cloud_queue</i>云平台宣传网页
   </a>
+</ul>
 
-  <a href="https://github.com/ntzx/Geek-/blob/master/index.html" target="_blank" class="mdui-btn">
-    <i class="mdui-menu-item-icon mdui-icon material-icons">code</i>查看源码
+<ul class=" mdui-list">
+
+  <a href="https://github.com/ntzx/Geek-/blob/master/index.html" target="_blank" class=" mdui-float-left">
+    <i class="mdui-menu-item-icon mdui-icon material-icons">code</i>源码
   </a>
 
-  <a mdui-dialog="{target: '#later'}" class="mdui-ripple" >
+
+  <a mdui-dialog="{target: '#later'}" >
     <i class="mdui-menu-item-icon mdui-icon material-icons">public</i>博客
   </a>
 
-  <a mdui-dialog="{target: '#about'}"  class="mdui-ripple">
+  <a mdui-dialog="{target: '#about'}" class=" mdui-float-right">
     <i class="mdui-menu-item-icon mdui-icon material-icons">info</i>关于
   </a>
 
-  <a mdui-dialog="{target: '#contact'}" class="mdui-ripple">
+</ul>
+
+<ul class=" mdui-list">
+
+  <a mdui-dialog="{target: '#contact'}" class=" mdui-float-left">
     <i class="mdui-menu-item-icon mdui-icon material-icons">phone</i>联系我们
   </a>
 
-  <a href="https://www.ntzx.cn" class="mdui-ripple" target="_blank">
+  <a href="https://www.ntzx.cn" target="_blank" class=" mdui-float-right">
     <i class="mdui-menu-item-icon mdui-icon material-icons">account_balance</i>南通中学
   </a>
 
-
+</ul>
 
 
 </div>
+<div style="height:30px;width:auto;"></div>
+
 <!------------ 页底 ------------>
 
 
@@ -645,6 +586,9 @@
           <p>社长：</p>
           <p>周子皓 QQ：1518230971</p>
         </div>
+        <div class="mdui-dialog-actions">
+          <button class="mdui-btn mdui-ripple " mdui-dialog-close>close</button>
+        </div>
   </div>
 
   <div class="mdui-dialog" id="about">
@@ -652,11 +596,17 @@
         <div class="mdui-dialog-content">制作人员：
           <a href="https://github.com/EG01STAL" class="mdui-btn" target="_blank"><del>@熬夜爆肝的EG01STAL</del></a>
         </div>
+        <div class="mdui-dialog-actions">
+          <button class="mdui-btn mdui-ripple " mdui-dialog-close>close</button>
+        </div>
   </div>
 
   <div class="mdui-dialog" id="later">
       <div class="mdui-dialog-title">该功能正在开发中</div>
       <div class="mdui-dialog-content">我们会尽快完成建设的</div>
+      <div class="mdui-dialog-actions">
+        <button class="mdui-btn mdui-ripple " mdui-dialog-close>close</button>
+      </div>
   </div>
 <!------------ 提示框 ------------>
 </body>
