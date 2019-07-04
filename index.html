@@ -15,6 +15,22 @@
     <!--MDUI宕机时使用-->
     <link href="material/css&js/mdui.css" rel="stylesheet">
     <script src="material/css&js/mdui.js"></script>
+    <script scr="material/css&js/JQuery-3.4.1.min.js"></script>
+    <script>
+        var $$ = mdui.JQ;
+        $$(document).ready(function() {
+            mdui.snackbar({
+                message: '又到了社团招新季了呢！',
+                buttonText: '招新宣传页',
+                buttonColor: '#E91E63',
+                position: 'right-bottom',
+                timeout: '3000',
+                onButtonClick: function() {
+                    window.open("Recruit-new.html", "_blank");
+                },
+            });
+        });
+    </script>
 </head>
 
 <body style="background-color:rgb(57, 166, 255);padding-bottom: 0%" class="mdui-theme-primary-deep-indigo mdui-bottom-nav-fixed mdui-theme-accent-deep-purple ">
@@ -131,11 +147,10 @@
 
 
             </div>
-
-            <div style="height:30px;width: auto"></div>
-            <div class=" mdui-center"><a class=" mdui-center mdui-btn">目前我们还在接受各种各样的任务(￣ェ￣;)</a></div>
-            <div style="height:30px;width: auto"></div>
         </div>
+        <div style="height:15px;width: auto"></div>
+        <div class=" mdui-center"><a class=" mdui-center mdui-btn">目前我们还在接受各种各样的任务(￣ェ￣;)</a></div>
+        <div style="height:15px;width: auto"></div>
     </div>
 
 
@@ -349,9 +364,9 @@
         </ul>
 
 
-        <div style="height:30px;width: auto"></div>
+        <div style="height:15px;width: auto"></div>
         <div class=" mdui-center"><a href="https://github.com/orgs/ntzx/people" class=" mdui-btn mdui-center" target="_blank">还有人没有完成注册呀......o(*￣▽￣*)o </a></div>
-        <div style="height:30px;width: auto"></div>
+        <div style="height:15px;width: auto"></div>
 
     </div>
 
@@ -482,8 +497,10 @@
 
 
         </div>
+        <div style="height:15px;width: auto"></div>
         <p>虽然目前只有这么多</p>
         <p>但是要是有的话一定会更新的啦(～￣▽￣)～</p>
+        <div style="height:15px;width: auto"></div>
     </div>
 
     <!--—————————— 主部分 ——————————-->
@@ -518,7 +535,7 @@
                                                      margin: 0 auto;height:auto; padding: 20px 15% ;
                                                      bottom: 0px;">
         <ul class=" mdui-list ">
-            <a href="https://github.com/ntzx" target="_blank">
+            <a href="https://github.com/ntzx" target="_blank" class="">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve" class="mdui-icon" style="width: 24px;height:24px;">
       <path fill-rule="evenodd" clip-rule="evenodd" fill="#9999FF" d="M18,1.4C9,1.4,1.7,8.7,1.7,17.7c0,7.2,4.7,13.3,11.1,15.5
       c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1
@@ -531,23 +548,29 @@
         </ul>
 
         <ul class=" mdui-list">
-            <a href="https://ntzx.github.io/cloud/index.html" target="_blank">
+            <a href="https://ntzx.github.io/cloud/index.html" target="_blank" class=" ">
                 <i class="mdui-menu-item-icon mdui-icon material-icons">cloud_queue</i>云平台宣传网页
             </a>
         </ul>
 
         <ul class=" mdui-list">
+            <a href="Recruit-new.html" target="_blank" class=" ">
+                <i class="mdui-menu-item-icon mdui-icon material-icons">person_add</i>招新宣传页
+            </a>
+        </ul>
 
-            <a href="https://github.com/ntzx/Geek-/blob/master/index.html" target="_blank" class=" mdui-float-left">
+        <ul class=" mdui-list">
+
+            <a href="https://github.com/ntzx/Geek-/blob/master/index.html" target="_blank" class="  mdui-float-left">
                 <i class="mdui-menu-item-icon mdui-icon material-icons">code</i>源码
             </a>
 
 
-            <a mdui-dialog="{target: '#later'}">
+            <a mdui-dialog="{target: '#later'}" class=" ">
                 <i class="mdui-menu-item-icon mdui-icon material-icons">public</i>博客
             </a>
 
-            <a mdui-dialog="{target: '#about'}" class=" mdui-float-right">
+            <a mdui-dialog="{target: '#about'}" class="  mdui-float-right">
                 <i class="mdui-menu-item-icon mdui-icon material-icons">info</i>关于
             </a>
 
@@ -555,11 +578,11 @@
 
         <ul class=" mdui-list" class=" mdui-float-left">
 
-            <a mdui-dialog="{target: '#contact'}" class=" mdui-float-left">
+            <a mdui-dialog="{target: '#contact'}" class="  mdui-float-left">
                 <i class="mdui-menu-item-icon mdui-icon material-icons">phone</i>联系我们
             </a>
 
-            <a href="https://www.ntzx.cn" target="_blank" class=" mdui-float-right">
+            <a href="https://www.ntzx.cn" target="_blank" class="  mdui-float-right">
                 <i class="mdui-menu-item-icon mdui-icon material-icons">account_balance</i>南通中学
             </a>
 
